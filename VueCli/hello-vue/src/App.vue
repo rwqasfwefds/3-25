@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    반갑
+    <ul>
+      <li>HTML5</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// 컴포넌트 하나를 다른 파일에서 쓸 수 있게 배포
+// 객체 하나니깐 exprot default를 씀
 export default {
   name: 'App',
+  // 자식 컴포넌트가 들어옴
   components: {
-    HelloWorld
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
